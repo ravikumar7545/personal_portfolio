@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  background-color: #090b10;
+  color: white;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.section-heading {
+  text-align: center;
+  color: #4db5ff;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3rem;
+}
+h5 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}

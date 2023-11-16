@@ -1,0 +1,47 @@
+.main-details {
+  width: 80%;
+  margin: auto;
+  height: 35vh;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+
+  // display: grid;
+  // grid-template-columns: 0.8fr 1.2fr;
+  // gap: 10px;
+  // align-items: center;
+
+  .name-details {
+    display: grid;
+    place-items: center;
+
+    #pre-title {
+      margin: 0;
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    #name {
+      margin: 0;
+      font-size: 3.5rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    #post-title {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    #resume-btn {
+      background-color: #4db5ff;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 25px;
+      margin-top: 50px;
+      &:hover {
+        background-color: #242424;
+        color: #4db5ff;
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

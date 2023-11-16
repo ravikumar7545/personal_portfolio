@@ -1,0 +1,59 @@
+#skills {
+  width: 70%;
+  margin: auto;
+  height: 160vh;
+
+  #skills-container-heading {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-decoration-color: #646cff;
+    text-decoration-thickness: 3px;
+  }
+
+  #skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .frontend-skills,
+  .backend-skills,
+  .others-skills {
+    height: 60vh;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 400ms;
+
+    > div {
+      width: 80%;
+      height: 30vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-items: center;
+
+      .experience_details {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.skills-heading {
+  font-family: 'Poppins', sans-serif;
+  color: #4db5ff;
+}
