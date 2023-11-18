@@ -6,21 +6,6 @@ import {
   other_skills,
 } from '../assets/developer_skill';
 
-export const firstList = {
-  initial: { opacity: 0, y: -30 },
-  final: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-};
-
-export const secondList = {
-  initial: { opacity: 0, y: -30 },
-  final: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.2 } },
-};
-
-export const thirdList = {
-  initial: { opacity: 0, y: -30 },
-  final: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.4 } },
-};
-
 const Skills = () => {
   return (
     <section id="skills">

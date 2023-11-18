@@ -7,8 +7,21 @@ import { FaNode } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { TbBrandThreejs } from "react-icons/tb";
 import { SiMongodb, SiExpress, SiPython, SiRedux } from "react-icons/si";
-import { firstList, secondList, thirdList } from "../components/Skills";
 
+const firstList = {
+  initial: { opacity: 0, y: -30 },
+  final: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
+
+const secondList = {
+  initial: { opacity: 0, y: -30 },
+  final: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.2 } },
+};
+
+const thirdList = {
+  initial: { opacity: 0, y: -30 },
+  final: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.4 } },
+};
 export const frontend_skills = [
   {
     Icon: FaReact,
