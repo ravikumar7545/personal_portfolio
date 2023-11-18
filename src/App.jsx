@@ -1,19 +1,22 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './components/Homepage';
-import Experience from './components/Experience';
 import Navbar from './components/Navbar';
+import MainDetails from './components/MainDetails';
+import About from './components/About';
+import Project from './components/Project';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
-      </BrowserRouter>
+      <Toaster />
+      <Navbar />
+      <MainDetails />
+      <About />
+      <Project />
+      <Skills />
+      <Contact />
     </>
   );
 }

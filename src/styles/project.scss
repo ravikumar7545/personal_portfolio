@@ -1,14 +1,18 @@
 #project {
   width: 80%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   height: 100vh;
 
   .project-container {
+    width: 100%;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 330px);
     gap: 10px;
     height: 60vh;
+    justify-items: center;
+    justify-content: center;
 
     .project-box {
       width: 280px;
@@ -40,6 +44,65 @@
       }
       &:hover {
         transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  #project {
+    width: 1024px;
+    .project-container {
+      height: 125vh;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #project {
+    width: 768px;
+    height: 150vh;
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 850px) {
+  #project {
+    max-width: 640px;
+
+    .project-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  #project {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 640px) {
+  #project {
+    max-width: 475px;
+    height: 225vh;
+    .project-container {
+      grid-template-columns: 1fr;
+
+      .project-box {
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  #project {
+    width: 100%;
+
+    .project-container {
+      .project-box {
+        width: 300px;
       }
     }
   }

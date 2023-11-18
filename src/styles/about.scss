@@ -3,6 +3,7 @@
   width: 80%;
   margin: auto;
   margin-top: 10%;
+  height: 60vh;
 
   .section-heading {
     text-align: center;
@@ -35,5 +36,24 @@
   }
   #about-me-box {
     font-family: 'Poppins', sans-serif;
+  }
+}
+
+// Media query
+
+@media (max-width: 850px) {
+  #about {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  #about {
+    max-width: 475px;
+    height: 90vh;
+
+    #about-container {
+      grid-template-columns: 1fr;
+    }
   }
 }

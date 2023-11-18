@@ -1,6 +1,7 @@
 import '../styles/contact.scss';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { FaWhatsapp } from 'react-icons/fa6';
+import { toast } from 'react-hot-toast';
 const Contact = () => {
   return (
     <section id="contact">
@@ -24,10 +25,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form">
+          <h3>Send Message</h3>
           <input type="text" placeholder="Your full name" />
           <input type="text" placeholder="Your email" />
           <textarea type="text" placeholder="Your message" />
-          <button>Send</button>
+          <button onClick={() => toast.success('Message sent')}>Send</button>
         </div>
       </div>
     </section>

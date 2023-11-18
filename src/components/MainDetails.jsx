@@ -3,7 +3,7 @@ import resume from '../assets/resume.pdf';
 
 const MainDetails = () => {
   return (
-    <section id="details" className="main-details">
+    <section id="details">
       <div className="name-details">
         <p id="pre-title">Hello I'm</p>
         <h3 id="name">Ravi Kumar</h3>

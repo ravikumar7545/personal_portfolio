@@ -98,7 +98,7 @@ const Skills = () => {
           <h3 className="skills-heading">Other</h3>
           <div className="experience_content">
             <article className="experience_details">
-              <SiPython pescript size={'20px'} />
+              <SiPython size={'20px'} />
               <div>
                 <h4>Python</h4>
                 <small>Experienced</small>
