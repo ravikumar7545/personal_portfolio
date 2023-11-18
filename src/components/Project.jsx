@@ -1,22 +1,47 @@
 import '../styles/project.scss';
+import { motion } from 'framer-motion';
 
 const Project = () => {
   return (
     <section id="project">
-      <h5>My Recent Work</h5>
-      <h2 className="section-heading">Projects</h2>
+      <motion.h5
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+      >
+        My Recent Work
+      </motion.h5>
+      <motion.h2
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        className="section-heading"
+      >
+        Projects
+      </motion.h2>
       <div className="project-container">
         <div className="project-box">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
             className="project-image"
             src={require('../assets/food_delivery_website_image.png')}
             alt="project_image"
           />
-          <p className="project-title">Food Delievery Website</p>
-          <p className="project-description">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.7 } }}
+            className="project-title"
+          >
+            Food Delievery Website
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
+            className="project-description"
+          >
             MERN Website through which restaurant can deliver their products
             online with register, login and add to cart feature.
-          </p>
+          </motion.p>
           <div className="project-buttons">
             <a target="_blank" href="https://cravo-frontend.onrender.com/">
               <button>Live Demo</button>
@@ -29,18 +54,30 @@ const Project = () => {
             </a>
           </div>
         </div>
-        <div className="project-box">
-          <img
+        <motion.div className="project-box">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
             className="project-image"
             src={require('../assets/gradebook_image.png')}
             alt="project_image"
           />
-          <p className="project-title">Gradebook</p>
-          <p className="project-description">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.7 } }}
+            className="project-title"
+          >
+            Gradebook
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
+            className="project-description"
+          >
             React project display the details of all the students in table and
             graph or pie format of their grade and various statistics with
             sorting and filtering option.
-          </p>
+          </motion.p>
           <div className="project-buttons">
             <a target="_blank" href="https://gradebook-topaz.vercel.app/">
               <button>Live Demo</button>
@@ -52,24 +89,36 @@ const Project = () => {
               <button>Github</button>
             </a>
           </div>
-        </div>
-        <div className="project-box">
-          <img
+        </motion.div>
+        <motion.div className="project-box">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
             className="project-image"
             src={require('../assets/todo_image.png')}
             alt="project_image"
           />
-          <p className="project-title">Todo</p>
-          <p className="project-description">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 0.7 } }}
+            className="project-title"
+          >
+            Todo
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
+            className="project-description"
+          >
             Todo website (MERN) through which user can add, edit or delete their
             task.
-          </p>
+          </motion.p>
           <div className="project-buttons">
             <a target="_blank" href="https://github.com/ravikumar7545/ToDo">
               <button>Github</button>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
